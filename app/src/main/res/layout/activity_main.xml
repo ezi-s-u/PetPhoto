@@ -14,11 +14,11 @@
         android:text="@string/text_select_start"
         android:textSize="@dimen/text_size_large"
         android:layout_marginBottom="@dimen/margin_small"/>
-    <CheckBox
-        android:id="@+id/check_start"
+    <Switch
+        android:id="@+id/switch_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/check_start"
+        android:text="@string/switch_start"
         android:textSize="@dimen/text_size_medium"/>
     <LinearLayout
         android:id="@+id/linear"
@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_favorite_pet"
+            android:text="@string/text_favorite_version"
             android:textSize="@dimen/text_size_medium"
             android:textStyle="bold"/>
         <RadioGroup
@@ -40,27 +40,21 @@
                 android:id="@+id/radio_dog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_dog"
+                android:text="@string/radio_o"
                 android:textSize="@dimen/text_size_medium"/>
             <RadioButton
                 android:id="@+id/radio_rabbit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_rabbit"
+                android:text="@string/radio_p"
                 android:textSize="@dimen/text_size_medium"/>
             <RadioButton
                 android:id="@+id/radio_cat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_cat"
+                android:text="@string/radio_q"
                 android:textSize="@dimen/text_size_medium"/>
         </RadioGroup>
-        <Button
-            android:id="@+id/btn_done"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_medium"
-            android:text="@string/btn_done"/>
         <ImageView
             android:id="@+id/imgv"
             android:layout_width="match_parent"
@@ -68,6 +62,4 @@
             android:adjustViewBounds="true"
             android:src="@drawable/dog"/>
     </LinearLayout>
-
-
 </LinearLayout>
