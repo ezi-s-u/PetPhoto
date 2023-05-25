@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var switchStart: Switch
     lateinit var rg : RadioGroup
     lateinit var linear : LinearLayout
-    lateinit var btnDone : Button
-    lateinit var btnFist : Button
+    lateinit var btnFisnish : Button
+    lateinit var btnFirst : Button
     lateinit var imgv : ImageView
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         switchStart = findViewById(R.id.switch_start)
         rg = findViewById(R.id.rg)
         linear = findViewById(R.id.linear)
-        btnDone = findViewById(R.id.btn_done)
-        btnFist = findViewById(R.id.btn_first)
+        btnFisnish = findViewById(R.id.btn_done)
+        btnFirst = findViewById(R.id.btn_first)
         imgv = findViewById(R.id.imgv)
         linear.visibility = View.INVISIBLE
 
@@ -42,5 +42,18 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        btnFisnish.setOnClickListener(btnListener)
+        btnFirst.setOnClickListener(btnListener)
+
+
+    }
+    var btnListener = View.OnClickListener {
+        when (it.id) {
+            R.id.btn_done -> finish()
+            R.id.btn_first -> {
+                linear.visibility = View.INVISIBLE
+                switchStart.
+            }
+        }
     }
 }
